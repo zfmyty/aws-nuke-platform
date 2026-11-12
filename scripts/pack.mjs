@@ -50,7 +50,7 @@ const stageName = `aws-nuke-platform-v${pkg.version}${tag ? `-${tag}` : ''}${
 const stage = path.join(releaseRoot, stageName)
 
 /** 根目录下随包分发的单文件（白名单） */
-const ROOT_FILES = ['package.json', 'README.md', 'README-DETAIL.md', 'LICENSE', 'THIRD-PARTY-LICENSES.md', 'DISCLAIMER.md', 'start.bat', 'stop.bat', 'check.bat']
+const ROOT_FILES = ['package.json', 'README.md', 'README-DETAIL.md', 'LICENSE', 'THIRD-PARTY-LICENSES.md', 'DISCLAIMER.md', 'ROADMAP.md', 'start.bat', 'stop.bat', 'check.bat']
 
 /** 绝不允许出现在发布包里的根级目录 —— 仅是兜底，正常流程根本不会复制它们 */
 const FORBIDDEN_ROOTS = ['测试文件', '相关文件', '.workbuddy', '.git', 'release', 'web', 'node_modules']

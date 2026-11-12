@@ -9,6 +9,7 @@ AWS Nuke 管理平台是**会真实删除 AWS 资源**的运维工具，因此�
 
 - [README.md](README.md) — 项目定位与快速开始
 - [README-DETAIL.md](README-DETAIL.md) — 目录结构、分层约定、接口清单
+- [ROADMAP.md](ROADMAP.md) — 后续计划与验收标准（想提功能建议前先看这里）
 - [SECURITY.md](SECURITY.md) — 安全问题如何报告（**请勿开公开 Issue，也不要在 Issue 里写漏洞细节**）
 - [DISCLAIMER.md](DISCLAIMER.md) — 使用限制与风险承担条款（贡献代码前也应了解）
 
