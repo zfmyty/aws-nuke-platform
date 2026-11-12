@@ -1,0 +1,40 @@
+{
+  "name": "aws-nuke-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "面向多账号场景的 aws-nuke 编排平台：凭证托管、配置生成、演练/执行、权限分离、一键部署",
+  "type": "module",
+  "author": "zfmyty",
+  "license": "MIT",
+  "homepage": "https://github.com/zfmyty/aws-nuke-platform#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zfmyty/aws-nuke-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zfmyty/aws-nuke-platform/issues"
+  },
+  "keywords": [
+    "aws",
+    "aws-nuke",
+    "cloud-cleanup",
+    "multi-account",
+    "organizations",
+    "assume-role",
+    "vue3",
+    "express",
+    "self-hosted"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix web",
+    "dev:server": "node server/src/index.js",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "node server/src/index.js",
+    "serve": "npm run build && npm start",
+    "pack": "npm run build && node scripts/pack.mjs"
+  }
+}

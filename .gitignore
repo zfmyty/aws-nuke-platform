@@ -1,0 +1,39 @@
+# ── 依赖 ────────────────────────────────────────────────────
+node_modules/
+
+# ── 运行期数据（数据库、主密钥、令牌密钥、日志、生成的配置） ──
+server/data/
+!server/data/.gitkeep
+
+# ── 构建产物（npm run build 生成） ──────────────────────────
+server/public/
+web/dist/
+.tmp/
+*.timestamp-*.mjs
+
+# ── 发布包（走 GitHub Releases，不入库） ────────────────────
+release/
+
+# ── 二进制与压缩包（走 Releases 附件，不入库） ──────────────
+runtime/bin/*
+!runtime/bin/.gitkeep
+*.exe
+*.zip
+
+# ── 开发辅助资产（不属于产品代码） ──────────────────────────
+.workbuddy/
+测试文件/
+相关文件/
+.vscode/
+.idea/
+
+# ── 日志与系统垃圾 ─────────────────────────────────────────
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── 环境变量 ───────────────────────────────────────────────
+.env
+.env.*

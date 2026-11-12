@@ -1,0 +1,87 @@
+name: Bug 报告
+description: 报告平台运行中的异常、报错或不符合预期的行为
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > 安全漏洞请勿在此提交，请按 [SECURITY.md](https://github.com/zfmyty/aws-nuke-platform/blob/main/SECURITY.md) 的方式私下报告。
+        >
+        > 贴日志前务必确认不含 AK/SK、Session Token、真实账号 ID。
+
+  - type: input
+    id: version
+    attributes:
+      label: 平台版本
+      description: 见页面底部或 `package.json` 的 version
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install
+    attributes:
+      label: 安装方式
+      options:
+        - 发布包（不含 exe）
+        - 发布包（-full 含 exe）
+        - 从源码运行
+    validations:
+      required: true
+
+  - type: input
+    id: env
+    attributes:
+      label: 运行环境
+      description: Windows 版本 + Node 版本 + AWS CLI 版本
+      placeholder: Windows 11 24H2 / Node 22.12.0 / aws-cli 2.17.0
+    validations:
+      required: true
+
+  - type: input
+    id: authmode
+    attributes:
+      label: 账号认证方式
+      description: 出问题的账号用的是哪种方式
+      placeholder: 组织跨账号（AssumeRole） / AK-SK 直连 / CLI Profile
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 从登录开始，尽量写成别人能照着做的步骤
+      placeholder: |
+        1. 进入「账号管理」
+        2. 勾选账号 xxx，点击「演练」
+        3. 任务中心出现报错
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+      description: 页面表现 + 控制台输出
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 脱敏后的日志
+      description: 任务中心日志或 `server/data/logs/<jobId>.log`；请把账号 ID 替换为 123456789012
+      render: text
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 截图、配置片段、是否只在特定分区/区域出现等

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全问题（私下报告）
+    url: https://github.com/zfmyty/aws-nuke-platform/security/advisories/new
+    about: 请勿通过公开 Issue 披露安全漏洞，使用 GitHub Security Advisories
+  - name: 使用问题与排错
+    url: https://github.com/zfmyty/aws-nuke-platform/blob/main/README-DETAIL.md#八常见问题
+    about: 常见报错（MFA 拒绝、二次 AssumeRole、profile 冲突等）先看这里

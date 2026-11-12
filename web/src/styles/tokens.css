@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+
+  /* 背景与层次 */
+  --bg-root: #060a11;
+  --bg-deep: #080d16;
+  --bg-panel: rgba(15, 24, 38, 0.82);
+  --bg-panel-solid: #0f1826;
+  --bg-elevated: rgba(23, 35, 54, 0.9);
+  --bg-hover: rgba(34, 211, 238, 0.06);
+  --bg-input: rgba(9, 15, 25, 0.9);
+
+  /* 霓虹色板 */
+  --accent: #22d3ee;
+  --accent-soft: rgba(34, 211, 238, 0.14);
+  --violet: #a855f7;
+  --violet-soft: rgba(168, 85, 247, 0.14);
+  --blue: #3b82f6;
+  --success: #34d399;
+  --warning: #fbbf24;
+  --danger: #f43f5e;
+  --danger-soft: rgba(244, 63, 94, 0.12);
+
+  /* 文本 */
+  --text: #e8f2ff;
+  --text-dim: #a7bdd6;
+  --text-muted: #6f8aa6;
+  --text-faint: #4b6480;
+
+  /* 描边与阴影 */
+  --border: rgba(120, 170, 210, 0.14);
+  --border-strong: rgba(34, 211, 238, 0.32);
+  --shadow-lg: 0 24px 60px rgba(2, 8, 20, 0.62);
+  --shadow-sm: 0 6px 18px rgba(2, 8, 20, 0.4);
+  --glow-cyan: 0 0 24px rgba(34, 211, 238, 0.28);
+  --glow-violet: 0 0 26px rgba(168, 85, 247, 0.26);
+
+  /* 尺寸 */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --sidebar-w: 244px;
+  --header-h: 64px;
+
+  --font-sans: "Inter", "Segoe UI", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", Consolas, "Courier New", monospace;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

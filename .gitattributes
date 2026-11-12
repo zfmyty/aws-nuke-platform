@@ -1,0 +1,44 @@
+# 统一换行与编码：仓库内文本文件一律 LF + UTF-8
+* text=auto eol=lf
+
+# ── 文本（显式声明，避免 Windows 上被转成 CRLF） ──────────────
+*.js      text eol=lf
+*.mjs     text eol=lf
+*.cjs     text eol=lf
+*.vue     text eol=lf
+*.css     text eol=lf
+*.html    text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.txt     text eol=lf
+.gitignore      text eol=lf
+.gitattributes  text eol=lf
+
+# ── PowerShell 脚本保持 CRLF，否则部分环境解析异常 ────────────
+*.ps1     text eol=crlf
+*.psm1    text eol=crlf
+
+# ── Windows 批处理必须 CRLF ─────────────────────────────────
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+
+# ── 二进制（禁止 Git 做换行转换与文本 diff） ─────────────────
+*.exe     binary
+*.dll     binary
+*.zip     binary
+*.7z      binary
+*.gz      binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
+
+# ── 语言统计（让 GitHub 不要把构建产物算进主要语言） ─────────
+server/public/**  linguist-generated=true
+web/dist/**       linguist-generated=true
+package-lock.json linguist-generated=true
