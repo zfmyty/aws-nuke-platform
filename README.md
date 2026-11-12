@@ -1,9 +1,5 @@
 # AWS Nuke 管理平台
 
-<p align="center">
-  <img src="docs/images/logo.png" alt="AWS Nuke 管理平台" width="120" />
-</p>
-
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](../../releases)
 [![aws-nuke](https://img.shields.io/badge/aws--nuke-v3.68.3-orange)](https://github.com/ekristen/aws-nuke)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-green)]()
